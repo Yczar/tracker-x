@@ -37,11 +37,11 @@ class WelcomeScreen extends StatelessWidget {
                     height: 110,
                     width: 110,
                     decoration: BoxDecoration(
-                      color: Colors.blueAccent.withOpacity(0.1),
+                      color: Colors.blueAccent.withValues(alpha: 0.1),
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.blueAccent.withOpacity(0.25),
+                          color: Colors.blueAccent.withValues(alpha: 0.25),
                           blurRadius: 20,
                           offset: const Offset(0, 8),
                         ),
@@ -136,7 +136,7 @@ class _GlassButton extends StatelessWidget {
       child: BackdropFilter(
         filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
         child: Material(
-          color: Colors.blueAccent.withOpacity(0.85),
+          color: Colors.blueAccent.withValues(alpha: 0.85),
           child: InkWell(
             onTap: onPressed,
             splashColor: Colors.white24,
