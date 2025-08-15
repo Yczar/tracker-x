@@ -52,7 +52,7 @@ class TrackingRepository {
         'timestamp': entry.timestamp,
       });
     } catch (error) {
-      print('LOcation HELLO $error');
+      print('Location $error');
       // offline — save locally
       await _localDS.save(entry);
     }
