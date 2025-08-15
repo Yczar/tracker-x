@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:tracker_x/enums/map_style.dart';
+import 'package:tracker_x/.env.dart';
 
 class BaseTileLayer extends StatelessWidget {
   final MapStyle style;
@@ -67,10 +68,6 @@ class BaseTileLayer extends StatelessWidget {
       return {};
     }
 
-    return {
-      'accessToken':
-          apiKey ??
-          'pk.eyJ1IjoiYmdib2dvIiwiYSI6ImNtYTJoZHZrNTIxdHIyanNncGkxaDRka2sifQ.zj5gpS-JXR8tZjG7mPVedg',
-    };
+    return {'accessToken': apiKey ?? environment['mapboxPublicKey']};
   }
 }
