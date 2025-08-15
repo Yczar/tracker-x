@@ -250,7 +250,7 @@ class _TrackViewerScreenState extends State<TrackViewerScreen>
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'John Doe',
+                        'Ayotomide Babalola',
                         style: textTheme.titleMedium?.copyWith(
                           fontWeight: FontWeight.bold,
                           color: Colors.blueGrey.shade900,
