@@ -1,0 +1,15 @@
+enum MapStyle {
+  dark,
+  light,
+  satellite,
+  streets,
+  outdoors,
+  custom,
+  openStreetMap,
+  cartoLight,
+  cartoDark,
+  stamenToner,
+  stamenWatercolor,
+  thunderforestTransport,
+  esriWorldImagery,
+}
